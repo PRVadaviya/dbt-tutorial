@@ -1,0 +1,13 @@
+
+uv init:
+     for inislization of the project
+
+uv sync:
+     creating the virtual environment and installing the dependencies of the project
+
+uv add dbt-core:
+     for installing the dbt core package in the virtual environment
+
+uv add dbt-snowflake:
+     for installing the dbt snowflake package in the virtual environment, which allows you to use
+

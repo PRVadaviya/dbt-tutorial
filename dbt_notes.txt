@@ -1,0 +1,24 @@
+
+what is dbt?
+     dbt (data build tool) is an open-source command-line tool that helps 
+     transform raw data into a more usable format.
+     and also allows users to write SQL queries to define transformations. 
+    
+why dbt ?
+it is provide modulerity, templating(jinja), scalability, and maintainability to data transformation processes.
+
+dbt platforms?
+     DBT Core: (CLI Tool)The open-source version of dbt that can be used with various data warehouses.
+     DBT Cloud: DBT Cloud is like managed product built on top of DBT Core.
+                A hosted version of dbt that provides additional features and a user-friendly interface.
+     DBT Canvas: DBT Canvas is one of the feature of the DBT Cloud platform.
+               A collaborative platform for data teams to work together on dbt projects.
+
+what is the backbone of the DBT?
+     it is DBT Models, dbt models are something that holds your code.
+     which are SQL files that define transformations and data models.
+
+     it is write templating code, transformation data but dbt models haven't any compute power.
+     it will be use data warehouse(snowflake,databricks) resource to run the code and transform data.
+     dbt is use data warehouse as a compute engine to run the transformations defined in dbt models.
+     
