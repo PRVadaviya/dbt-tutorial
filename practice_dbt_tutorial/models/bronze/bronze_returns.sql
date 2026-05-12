@@ -1,0 +1,4 @@
+SELECT 
+*
+FROM 
+{{ source('STAGING', 'FACT_RETURNS') }}

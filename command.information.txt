@@ -21,4 +21,7 @@ dbt debug :
 
 goes to main project directory (in my case it is practice_dbt_tutorial) and run the command dbt debug to check the connection to the data warehouse and verify that the dbt project is set up correctly. It helps to identify any issues with the configuration or connectivity.
 
+dbt run:
+     for executing the dbt models defined in the project. It compiles the SQL code and runs it against the data warehouse to create or update the tables and views as specified in the models.
+
 
