@@ -11,3 +11,14 @@ uv add dbt-core:
 uv add dbt-snowflake:
      for installing the dbt snowflake package in the virtual environment, which allows you to use
 
+
+dbt init command:
+     for initializing a new dbt project in the current directory. It sets up the necessary file structure and configuration for a dbt project.
+     also give information about project and snowflake also.
+
+dbt debug :
+     for checking the connection to the data warehouse and verifying that the dbt project is set up correctly. It helps to identify any issues with the configuration or connectivity.
+
+goes to main project directory (in my case it is practice_dbt_tutorial) and run the command dbt debug to check the connection to the data warehouse and verify that the dbt project is set up correctly. It helps to identify any issues with the configuration or connectivity.
+
+

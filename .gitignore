@@ -1,2 +1,4 @@
 .vscode
 test.py
+profiles.yml
+.user.yml
