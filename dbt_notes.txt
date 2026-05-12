@@ -22,3 +22,5 @@ what is the backbone of the DBT?
      it will be use data warehouse(snowflake,databricks) resource to run the code and transform data.
      dbt is use data warehouse as a compute engine to run the transformations defined in dbt models.
      
+snowflake , databricks , fabrics are all adapter of dbt 
+
