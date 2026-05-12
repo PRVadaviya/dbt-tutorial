@@ -24,3 +24,18 @@ what is the backbone of the DBT?
      
 snowflake , databricks , fabrics are all adapter of dbt 
 
+config inheritance:
+     dbt_project.yml < properties < block
+     an in file config() block (high)  -> properties defined in .yml file (medium) -> config defined in project file (low)
+     example: if you have defined materialized as table in dbt_project.yml file and then you have defined materialized as view in config() block of the model file, 
+               then the model will be materialized as view because it has higher priority than the materialized defined in dbt_project.yml file.
+
+
+dbt schema priority (custom schema):
+     1. model file (config() block)
+     2. dbt_project.yml file
+     3. default schema defined in profile.yml file
+
+because schema will not change frequently so it is better to define it in dbt_project.yml file
+ and if you want to override it for a specific model then you can define it in config() block of the model file.
+
