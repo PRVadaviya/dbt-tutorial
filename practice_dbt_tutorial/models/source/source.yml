@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+   - name: STAGING
+     database: DBT_PRACTICE
+     schema: STAGING
+     tables:
+        - name: DIM_CUSTOMER
+        - name: DIM_DATE
+        - name: DIM_PRODUCT
+        - name: DIM_STORE
+        - name: FACT_SALES
+        - name: FACT_RETURNS
