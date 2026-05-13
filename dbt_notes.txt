@@ -68,3 +68,13 @@ jinja:
      jinja is a templating language that is used in dbt to write dynamic SQL queries.
      it allows you to use variables, loops, conditionals, and other programming constructs in your SQL code.
      with jinja, you can make your SQL code more flexible and reusable by using variables and logic to generate different SQL queries based on the context.
+
+dbt macros:
+     dbt macros are reusable pieces of SQL code that can be defined in the macros directory of a dbt project.
+     they allow you to encapsulate common logic or calculations that can be used across multiple models or analyses.
+     with dbt macros, you can avoid code duplication and make your SQL code more modular and maintainable.
+
+dbt snapshots:
+     dbt snapshots are a feature of dbt that allows you to capture and store the state of your data at a specific point in time.
+     they are typically used for slowly changing dimensions (SCD) or to track changes in your data over time.
+     with dbt snapshots, you can create a historical record of your data and analyze how it has changed over time.
