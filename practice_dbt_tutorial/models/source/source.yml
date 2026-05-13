@@ -11,3 +11,4 @@ sources:
         - name: DIM_STORE
         - name: FACT_SALES
         - name: FACT_RETURNS
+        - name: ITEMS
