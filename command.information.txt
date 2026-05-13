@@ -24,4 +24,14 @@ goes to main project directory (in my case it is practice_dbt_tutorial) and run 
 dbt run:
      for executing the dbt models defined in the project. It compiles the SQL code and runs it against the data warehouse to create or update the tables and views as specified in the models.
 
+dbt test:
+     for running the tests defined in the dbt project. It executes the test queries against the data warehouse to validate the data and ensure that it meets the specified conditions or constraints.
+     
+     it is check all the test cases which are defined in the tests directory of the dbt project.
+     and for the generic test have to create generic model inside the test directory and then have to create a test file inside the generic model 
+     and then have to write the test case in that file and then have to run the dbt test command to check the test case.
 
+dbt seed:
+     for loading the seed data defined in the dbt project. It reads the seed files (usually CSV files) and loads the data into the data warehouse as specified in the seed configuration(dbt_project.yml).
+     it is used to load static data into the data warehouse, such as reference data or lookup tables that do not change frequently. 
+     You can define seed files in your dbt project and then run the dbt seed command to load the data into your data warehouse.

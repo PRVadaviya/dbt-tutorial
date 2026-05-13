@@ -5,4 +5,27 @@ models:
     config:
       materialized: table
 
-     
+  - name: bronze_store
+    columns:
+      - name: STORE_SK
+        data_tests:
+          - not_null
+          - unique
+      - name : country
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['USA','Canada']
+              config:
+                severity: warn
+
+  - name: bronze_sales
+    columns:
+      - name: SALES_ID
+        data_tests:
+          - not_null
+          - unique
+      - name: gross_amount
+        data_tests:
+          - generic_non_negative
+      
